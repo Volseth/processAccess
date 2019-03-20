@@ -17,27 +17,39 @@ public class SJF  implements AcessAlgorithm {
     public double calculateAverageAccessTime() {
         ArrayList<Process> executionList=new ArrayList<>();
         double time=0;
-        double waitingTime=0;
         double totalWaitingTime=0;
         double size=targetList.size();
         targetList.sort(Comparator.comparing(Process::getInputTime).thenComparing(Process::getExecuteTime));
-        for (int i=0;i<size;i++) {
-            Process p=targetList.get(0);
-            executionList.add(p);
-            targetList.remove(p);
-            Process workingProc=executionList.get(0);
-            //Ustawienie zegara w przypadku gdy proces wszedł w czasie innym niż 0.
-            if(time<workingProc.getInputTime()){ time=workingProc.getInputTime(); }
+        time+=targetList.get(0).getInputTime();
 
-            time += workingProc.getExecuteTime();
-            waitingTime = time - (workingProc.getInputTime() + workingProc.getExecuteTime());
-            //Sprawdzenie czy w czasie wykonania w kolejce procesów które przybywają są takie, które powinny wykonać się wcześniej.
-            if(p.getInputTime()<time){
+        while(!targetList.isEmpty() || !executionList.isEmpty()) {
+            //Dodajemy procesy które nadchodzą do listy, pomijamy skoki o 1, tylko skaczemy o cały proces procesora
+            for (int i = 0; i < targetList.size(); i++) {
+                if (targetList.get(i).getInputTime() <= time) {
+                    executionList.add(targetList.remove(i));
+                    i--;
+                }
+                //Sortujemy listę w przypadku, gdy zdarzy się sytuacja, że podczas wykonania długiego procesy w tym czasie dojdzie kilka krótkich o różnym czasie
                 targetList.sort(Comparator.comparing(Process::getExecuteTime));
-            }
-            executionList.remove(workingProc);
-            totalWaitingTime += waitingTime;
+                //Jeśli lista nie jest pusta
+                if (!executionList.isEmpty())
+                {
+                    //Wyliczamy czas procesora dla zakończenia procesu
+                    if (time <= executionList.get(0).getInputTime()) {
+                        time = (executionList.get(0).getInputTime() + executionList.get(0).getExecuteTime());
+                    }
+                    //Doliczamy czas oczekiwania do całkowitego czasu i usuwamy proces z listy.
+                    else {
+                        totalWaitingTime += time - executionList.get(0).getInputTime();
+                        time+=executionList.get(0).getExecuteTime();
+                    }
+                    executionList.remove(0);
 
+                }
+                else {
+                    time=targetList.get(0).getInputTime();
+                }
+            }
         }
 
         return totalWaitingTime/size;
