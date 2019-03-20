@@ -24,6 +24,6 @@ class SRTFTest {
         processArrayList.add(p3);
         processArrayList.add(p4);
         processArrayList.add(p5);
-        assertEquals(2.8,accessAlgoritm.calculateAverageAccessTime(),0);
+        assertEquals(2.8,accessAlgoritm.calculateAverageAccessTime(),0.1);
     }
 }
