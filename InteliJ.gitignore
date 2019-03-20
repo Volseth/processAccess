@@ -35,6 +35,9 @@
 # CMake
 cmake-build-*/
 
+# CSV
+*.csv
+
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
