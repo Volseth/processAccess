@@ -13,7 +13,6 @@ public class SJF  implements AcessAlgorithm {
     public SJF(ArrayList<Process> targetList){
         this.targetList=targetList;
     }
-    @SuppressWarnings("Duplicates")
     @Override
     public double calculateAverageAccessTime() {
         ArrayList<Process> executionList=new ArrayList<>();
@@ -27,11 +26,12 @@ public class SJF  implements AcessAlgorithm {
             executionList.add(p);
             targetList.remove(p);
             Process workingProc=executionList.get(0);
-
+            //Ustawienie zegara w przypadku gdy proces wszedł w czasie innym niż 0.
             if(time<workingProc.getInputTime()){ time=workingProc.getInputTime(); }
 
             time += workingProc.getExecuteTime();
             waitingTime = time - (workingProc.getInputTime() + workingProc.getExecuteTime());
+            //Sprawdzenie czy w czasie wykonania w kolejce procesów które przybywają są takie, które powinny wykonać się wcześniej.
             if(p.getInputTime()<time){
                 targetList.sort(Comparator.comparing(Process::getExecuteTime));
             }

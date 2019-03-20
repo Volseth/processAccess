@@ -20,6 +20,7 @@ public class FCFS implements AcessAlgorithm {
         double waitingTime=0;
         targetList.sort(Comparator.comparingDouble(Process::getInputTime));
         for (Process p:targetList) {
+            //Ustawienie zegara gdy pierwszy proces wchodzi w czasie innym niż 0.
             if(time<p.getInputTime()){ time=p.getInputTime(); }
             time+=p.getExecuteTime();
             waitingTime=time-(p.getInputTime()+p.getExecuteTime());
