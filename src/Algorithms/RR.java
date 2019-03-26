@@ -29,11 +29,13 @@ public class RR implements AcessAlgorithm {
         lub na liście procesów oczekujących znajdują się jakiekolwiek procesy, które nie nadeszły
         */
         for(int i=0;i< targetList.size() || !executionList.isEmpty();clock++) {
+
             //Sprawdzam czy na liście procesów oczekujących znajduje się proces o odpowiednim czasie nadejścia.
             while(i < targetList.size() && targetList.get(i).getInputTime() == clock) {
                 executionList.add(targetList.get(i));
                 i++;
             }
+
             //Jeśli lista procesów do wykonania nie jest pusta.
             if (!executionList.isEmpty()) {
                 Process actual = executionList.remove(0);
@@ -56,9 +58,16 @@ public class RR implements AcessAlgorithm {
                 }
                 //Jeśli upłynął kwant czasu dodaje proces na koniec kolejki.
                 else {
+
+                    //Sprawdzam czy przed dodaniem na koniec nie pojawił się w tej samej sekundzie nowy proces.
+                    while(i < targetList.size() && targetList.get(i).getInputTime() == clock) {
+                        executionList.add(targetList.get(i));
+                        i++;
+                    }
                     executionList.add(actual);
                     remainingQuantumTime=this.quantum;
                 }
+
             }
         }
 

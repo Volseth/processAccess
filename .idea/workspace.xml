@@ -4,10 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/Algorithms/RR.java" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed9debe6-730e-4bee-aff7-6bb61afb297c" name="Default" comment="JunitDependencies">
+    <list default="true" id="ed9debe6-730e-4bee-aff7-6bb61afb297c" name="Default" comment="bugfix(&quot;Fixed sjf sorting and time calc bug&quot;)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProcessorAcess/Algorithms/SJF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProcessorAcess/Algorithms/SJF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/SJF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/SJF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProcessorAcess/Algorithms/RR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProcessorAcess/Algorithms/RR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/RR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/RR.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,40 +28,43 @@
     <session id="1333273706">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.0" value="7" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10217" />
-          <entry key="txt" value="64" />
+          <entry key="java" value="10675" />
+          <entry key="txt" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10217" />
-          <entry key="PLAIN_TEXT" value="64" />
+          <entry key="JAVA" value="10675" />
+          <entry key="PLAIN_TEXT" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="40" />
+          <entry key="csv" value="1" />
+          <entry key="java" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="40" />
+          <entry key="CSV" value="1" />
+          <entry key="JAVA" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -81,10 +84,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Program/Test.java">
+        <entry file="file://$PROJECT_DIR$/Tests/Algorithms/SJFTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="47" column="83" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="83" />
+            <state relative-caret-position="357">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,10 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/Algorithms/SJFTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Algorithms/SJF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="517">
+              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,10 +108,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Algorithms/SJF.java">
+        <entry file="file://$PROJECT_DIR$/src/Algorithms/RR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="42" column="115" selection-start-line="42" selection-start-column="115" selection-end-line="42" selection-end-column="115" />
+            <state relative-caret-position="-214">
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,10 +120,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithms/RR.java">
+        <entry file="file://$PROJECT_DIR$/src/Program/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="336">
+              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithms/FCFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="279">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#267#268#0" expanded="true" />
@@ -159,8 +162,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/Algorithms/RRTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/Algorithms/FCFSTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -168,7 +183,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/Process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-180">
               <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -237,11 +252,11 @@
         <option value="$PROJECT_DIR$/src/Program/Test.java" />
         <option value="$PROJECT_DIR$/src/Program/Test.java" />
         <option value="$PROJECT_DIR$/Tests/Algorithms/SRTFTest.java" />
-        <option value="$PROJECT_DIR$/src/Algorithms/RR.java" />
         <option value="$PROJECT_DIR$/Tests/Algorithms/FCFSTest.java" />
-        <option value="$PROJECT_DIR$/Tests/Algorithms/RRTest.java" />
         <option value="$PROJECT_DIR$/Tests/Algorithms/SJFTest.java" />
         <option value="$PROJECT_DIR$/src/Algorithms/SJF.java" />
+        <option value="$PROJECT_DIR$/Tests/Algorithms/RRTest.java" />
+        <option value="$PROJECT_DIR$/src/Algorithms/RR.java" />
       </list>
     </option>
   </component>
@@ -297,6 +312,12 @@
             <path>
               <item name="ProcessorAcess" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcessorAcess" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProcessorAcess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProcessorAcess" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -314,8 +335,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,7 +346,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553098507783" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553644378550" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -356,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="JUnit.All in ProcessorAcess">
     <configuration name="All in ProcessorAcess" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProcessorAcess" />
       <option name="PACKAGE_NAME" value="" />
@@ -465,8 +486,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.All in ProcessorAcess" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.FCFSTest" />
         <item itemvalue="Android JUnit.All in ProcessorAcess" />
         <item itemvalue="JUnit.FCFSTest.calculateAverageAccessTime" />
@@ -511,7 +532,18 @@
       <workItem from="1553080405945" duration="6169000" />
       <workItem from="1553086601260" duration="1668000" />
       <workItem from="1553089138510" duration="859000" />
-      <workItem from="1553094859269" duration="3586000" />
+      <workItem from="1553094859269" duration="3840000" />
+      <workItem from="1553113168551" duration="77000" />
+      <workItem from="1553466607618" duration="65000" />
+      <workItem from="1553525229303" duration="26000" />
+      <workItem from="1553526652921" duration="185000" />
+      <workItem from="1553526891583" duration="98000" />
+      <workItem from="1553528129723" duration="251000" />
+      <workItem from="1553605331493" duration="13000" />
+      <workItem from="1553610098668" duration="55000" />
+      <workItem from="1553634101145" duration="316000" />
+      <workItem from="1553639799292" duration="516000" />
+      <workItem from="1553640799003" duration="3450000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0 algorithm">
       <created>1553087048148</created>
@@ -527,43 +559,50 @@
       <option name="project" value="LOCAL" />
       <updated>1553093862419</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bugfix(&quot;Fixed sjf sorting and time calc bug&quot;)">
+      <created>1553098649988</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553098649988</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 42m 35s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 34m 23s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FCFSTest - 2019.03.20 at 16h 44m 57s.xml">
-      <configuration name="FCFSTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 45m 09s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 35m 50s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 46m 03s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 44m 23s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 47m 50s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 44m 47s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 49m 07s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 45m 07s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 55m 02s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 45m 19s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 16h 56m 11s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 46m 17s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 17h 08m 57s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 47m 26s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ProcessorAcess - 2019.03.20 at 17h 09m 17s.xml">
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 47m 42s.xml">
+      <configuration name="All in ProcessorAcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_ProcessorAcess - 2019.03.27 at 00h 49m 25s.xml">
       <configuration name="All in ProcessorAcess" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76879000" />
+    <option name="totallyTimeSpent" value="82185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,7 +617,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.26812366" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.3022388" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -648,7 +687,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.0 algorithm" />
     <MESSAGE value="JunitDependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="JunitDependencies" />
+    <MESSAGE value="bugfix(&quot;Fixed sjf sorting and time calc bug&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix(&quot;Fixed sjf sorting and time calc bug&quot;)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tests/FCFSTest.java" />
@@ -669,12 +709,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0plik.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Algorithms/SJFTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Algorithms/FCFSTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Algorithms/SRTFTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/FCFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -691,16 +773,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Algorithms/RRTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/SJF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="517">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Process.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="-180">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -710,69 +795,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Algorithms/SRTFTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/FCFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="47" column="83" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="83" />
+        <state relative-caret-position="336">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Function.java">
+    <entry file="file://$PROJECT_DIR$/Tests/Algorithms/RRTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="272">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithms/RR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Algorithms/SJFTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/SJF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="42" column="115" selection-start-line="42" selection-start-column="115" selection-end-line="42" selection-end-column="115" />
+        <state relative-caret-position="-214">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
