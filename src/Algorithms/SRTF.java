@@ -18,15 +18,12 @@ public class SRTF implements AcessAlgorithm {
         ArrayList<Process> executionList=new ArrayList<>();
         int clock=0;
         int totalWaitingTime=0;
-        /*
-        Pętla wykona się do momentu, gdy na liście wykonywanych będą jakieś procesy,
-        lub na liście procesów oczekujących znajdują się jakiekolwiek procesy, które nie nadeszły
-        */
+        /*Pętla wykona się do momentu, gdy na liście wykonywanych będą jakieś procesy,
+        lub na liście procesów oczekujących znajdują się jakiekolwiek procesy, które nie nadeszły.*/
         targetList.sort(Comparator.comparing(Process::getInputTime).thenComparing(Process::getExecuteTime));
         for(int i=0;i< targetList.size() || !executionList.isEmpty();clock++) {
             /*Sprawdzam czy na liście procesów oczekujących znajduje się proces o odpowiednim czasie nadejścia,
-            dodajemy go do listy i listę sortujemy(obsługa wywłaszczenia)
-             */
+            dodajemy go do listy i listę sortujemy(obsługa wywłaszczenia).*/
             while(i < targetList.size() && targetList.get(i).getInputTime() == clock) {
                 executionList.add(targetList.get(i));
                 executionList.sort(Comparator.comparing(Process::getRemainingTime));
