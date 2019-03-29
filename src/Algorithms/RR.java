@@ -50,14 +50,14 @@ public class RR implements AcessAlgorithm {
                     totalWaitingTime += actual.getWaitingTime();
                     remainingQuantumTime=this.quantum;
                 }
-                //Jeśli kwant czasu nie upłynął, proces się nie zakończył to przywracam proces spowrotem na początek kolejki.
+                //Jeśli kwant czasu nie upłynął, proces się nie zakończył to przywracam proces na początek kolejki.
                 else if(remainingQuantumTime>0) {
                     executionList.add(0,actual);
                 }
                 //Jeśli upłynął kwant czasu dodaje proces na koniec kolejki.
                 else {
-                    //Sprawdzam czy przed dodaniem na koniec nie pojawił się w tej samej sekundzie nowy proces.
-                    while(i < targetList.size() && targetList.get(i).getInputTime() == clock) {
+                    //Sprawdzam czy przed dodaniem na koniec nie pojawił nowy proces.
+                    while(i < targetList.size() && targetList.get(i).getInputTime() == clock+1) {
                         executionList.add(targetList.get(i));
                         i++;
                     }

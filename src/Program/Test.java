@@ -40,17 +40,23 @@ public class Test {
             ArrayList<Process> processesQueueSJF= new ArrayList<>(processesQueueFCFS);
             ArrayList<Process> processesQueueSRTF= new ArrayList<>(processesQueueFCFS);
             ArrayList<Process> processesQueueRR= new ArrayList<>(processesQueueFCFS);
-            ArrayList<Process> processesQueueRR2= new ArrayList<>(processesQueueFCFS);
             AcessAlgorithm accessAlgorithmFCFS= new FCFS(processesQueueFCFS);
             AcessAlgorithm accessAlgorithmSJF= new SJF(processesQueueSJF);
             AcessAlgorithm accessAlgorithmSRTF= new SRTF(processesQueueSRTF);
             AcessAlgorithm accessAlgorithmRR= new RR(processesQueueRR,quantum);
-            AcessAlgorithm accessAlgorithmRR2= new RR(processesQueueRR2,quantum*2);
             accessTimeFCFS+=accessAlgorithmFCFS.calculateAverageAccessTime();
             accessTimeSJF+=accessAlgorithmSJF.calculateAverageAccessTime();
+            for (Process process: processesQueueRR) {
+                process.setWaitingTime(0);
+                process.setRemainingTime(process.getExecuteTime());
+            }
             accessTimeSRTF+=accessAlgorithmSRTF.calculateAverageAccessTime();
+            for (Process process: processesQueueRR) {
+                process.setWaitingTime(0);
+                process.setRemainingTime(process.getExecuteTime());
+            }
             accessTimeRR+=accessAlgorithmRR.calculateAverageAccessTime();
-            accessTimeRR2+=accessAlgorithmRR2.calculateAverageAccessTime();
+
             Process.saveToFile(processesQueueFCFS,i+"plik.csv");
 
         }
@@ -58,7 +64,6 @@ public class Test {
         System.out.println("Średni czas oczekiwania dla algorytmu SJF:"+ accessTimeSJF/n);
         System.out.println("Średni czas oczekiwania dla algorytmu SRTF:"+ accessTimeSRTF/n);
         System.out.println("Średni czas oczekiwania dla algorytmu RR:"+ accessTimeRR/n);
-        System.out.println("Średni czas oczekiwania dla algorytmu RR(Kwant 2 razy dłuższy):"+accessTimeRR2/n);
     }
 
 

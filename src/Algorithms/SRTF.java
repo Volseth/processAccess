@@ -23,12 +23,13 @@ public class SRTF implements AcessAlgorithm {
         targetList.sort(Comparator.comparing(Process::getInputTime).thenComparing(Process::getExecuteTime));
         for(int i=0;i< targetList.size() || !executionList.isEmpty();clock++) {
             /*Sprawdzam czy na liście procesów oczekujących znajduje się proces o odpowiednim czasie nadejścia,
-            dodajemy go do listy i listę sortujemy(obsługa wywłaszczenia).*/
+            dodajemy go do listy.*/
             while(i < targetList.size() && targetList.get(i).getInputTime() == clock) {
                 executionList.add(targetList.get(i));
-                executionList.sort(Comparator.comparing(Process::getRemainingTime));
                 i++;
             }
+            //obsługa wywłaszczenia.
+            executionList.sort(Comparator.comparing(Process::getRemainingTime));
             //Jeśli lista procesów do wykonania nie jest pusta.
             if (!executionList.isEmpty()) {
                 Process actual = executionList.remove(0);
