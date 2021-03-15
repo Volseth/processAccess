@@ -1,2 +1,2 @@
 # processAccess
-Algorytmy przyzdziału czasu procesora
+Algorithms for managing of processor's time
